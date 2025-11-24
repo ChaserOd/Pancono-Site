@@ -4,141 +4,137 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pancono Coin (Panno)</title>
- <style>
-  /* Reset and base */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+  <style>
+    /* Reset and base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-  body {
-    background-color: #0b1a33; /* dark navy blue */
-    color: #ffffff;
-    line-height: 1.7;
-    padding: 20px;
-    font-size: 18px; /* ⬅️ Increased from default */
-  }
-
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-    background: #142a4c;
-    border-radius: 15px;
-    padding: 30px 40px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  }
-
-  h1 {
-    color: #00d4ff;
-    font-size: 2.2em; /* ⬅️ Increased */
-    margin-bottom: 15px;
-  }
-
-  h2 {
-    color: #ffd700;
-    font-size: 1.7em; /* ⬅️ Increased */
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
-  h3 {
-    font-size: 1.4em; /* ⬅️ Added larger h3 */
-    margin-bottom: 12px;
-  }
-
-  p {
-    margin-bottom: 15px;
-    font-size: 18px; /* ⬅️ Increased */
-  }
-
-  ul {
-    margin-left: 25px;
-    margin-bottom: 15px;
-    font-size: 18px; /* ⬅️ Increased */
-  }
-
-  li {
-    margin-bottom: 12px;
-  }
-
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 25px;
-    margin-bottom: 10px;
-  }
-
-  .buttons a {
-    flex: 1;
-    text-align: center;
-    padding: 18px 20px; /* ⬅️ Slightly bigger */
-    background: #00d4ff;
-    color: #0b1a33;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 18px; /* ⬅️ Increased */
-    transition: 0.3s;
-  }
-
-  .buttons a:hover {
-    background: #00b2cc;
-    color: #ffffff;
-    transform: scale(1.05);
-  }
-
-  .small-note {
-    font-size: 1em;
-    color: #aaaaaa;
-    margin-top: 20px;
-  }
-
-  @media (max-width: 600px) {
     body {
-      font-size: 17px; /* ⬅️ Slightly reduce on mobile */
+      background-color: #0b1a33;
+      color: #ffffff;
+      line-height: 1.7;
+      padding: 20px;
+      font-size: 18px;
     }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #142a4c;
+      border-radius: 15px;
+      padding: 30px 40px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      color: #00d4ff;
+      font-size: 2.2em;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      color: #ffd700;
+      font-size: 1.7em;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    ul {
+      margin-left: 25px;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    /* Buttons grid */
     .buttons {
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 25px;
+      margin-bottom: 20px;
     }
-  }
-</style>
+
+    .buttons a {
+      text-align: center;
+      padding: 18px 20px;
+      background: #00d4ff;
+      color: #0b1a33;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 18px;
+      transition: 0.3s;
+      display: block;
+    }
+
+    .buttons a:hover {
+      background: #00b2cc;
+      color: #ffffff;
+      transform: scale(1.05);
+    }
+
+    .small-note {
+      font-size: 1em;
+      color: #aaaaaa;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 17px;
+      }
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #ffd700;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <h1>🚀 Welcome to Pancono Coin (Panno)!</h1>
-  
 
-    
-    <p>When the App is online and working, users will see a <strong>10 min Claim Pancano session at this same page</strong> (as shown in the image below) where you will be able to claim 1 Panno in per session.</p>
-    <p>In the app, private keys will be displayed in there. IF you find the it immediately copy and import it by clicking the below <strong>Wallet Bot</strong> button.</p>
+    <p>When the App is online and working, users will see a <strong>10 min Claim Pancano session at this same page</strong> (as shown in the image below) where you will be able to claim 1 Panno per session.</p>
+    <p>In the app, private keys will be displayed there. If you find them, immediately copy and import them by clicking the <strong>Wallet Bot</strong> button below.</p>
 
     <!-- How it Works image -->
-    <img src="images/pancono_image.png" alt="How it Works Illustration" style="max-width:100%; margin-top:15px; border-radius:10px;">
+    <img src="images/pancono_image.png" alt="How it Works Illustration">
 
-     <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3 mt-8">
-    
-    <a href="https://t.me/PanconoBot?start" target="_blank"
-        class="bg-cyan-400 text-[#0b1a33] font-semibold py-3 px-4 text-center rounded-lg transition transform hover:scale-105 hover:bg-cyan-300">
-        🌍 Check UTC Time
-      </a>
+    <!-- Buttons -->
+    <div class="buttons">
+      <a href="https://t.me/PanconoBot?start" target="_blank">Telegram Wallet Bot</a>
+      <a href="https://t.me/PanconoSupport" target="_blank">Support Chat</a>
+    </div>
 
-     </div>
-       
     <h2>🔥 Your Daily Task:</h2>
 
-    <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3 mt-8">
-
-      
     <ul>
-    
-      <li>Come back every day and check if the app is live and 10 min Claim Pancano session is available, also check if Panno has been added to your <span class="highlight">balance</span> or <span class="highlight">referral rewards balance</span>.</li>
-      <li>Get your invite friend link from app or wallet bot. Earn 10 panno on referring each friends. Invite atleast two friends to get eligible for airdrop. Make sure whenever the app is live for 10 min claim session that time share your referal links at social media to get maximum referral earnings. </li>
+      <li>Come back every day and check if the app is live and 10 min Claim Pancano session is available. Also check if Panno has been added to your <span class="highlight">balance</span> or <span class="highlight">referral rewards balance</span>.</li>
+      <li>Get your invite friend link from the app or wallet bot. Earn 10 Panno for referring each friend. Invite at least two friends to get eligible for the airdrop. Whenever the app is live for a 10 min claim session, share your referral links on social media to maximize earnings.</li>
     </ul>
-    
-    <p>📢 The claim session of app doesnt always stay live. To know the UTC time when it is live, always come here and check our official Panno Telegram Channel or this page on daily basis — we post the exact UTC time here ⏰.</p>
+
+    <p>📢 The claim session does not always stay live. To know the UTC time when it is live, always check our official Panno Telegram Channel or this page daily — we post the exact UTC time here ⏰.</p>
+
   </div>
 </body>
 </html>
